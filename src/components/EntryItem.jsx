@@ -6,28 +6,30 @@ function EntryItem({ entry }) {
   const { handleModal, handleDelete } = useContext(EntryContext);
 
   return (
-    <div>
-      <div className="entry-item w-[100rem] p-4 border border-gray-300 flex flex-col items-start gap-4">
+    <div className="flex justify-between">
+      <div className="entry-item w-[100%] min-h-[30rem] text-white p-4 border border-xl border-amber-300 flex flex-col justify-between items-start gap-4">
+        <div className="flex flex-col justify-between">
         <h2>{entry.title}</h2>
         <p>{entry.content}</p>
         <p>{entry.date}</p>
+        </div>
         <img
           src={entry.image}
           alt={entry.title}
-          className="w-[20rem] h-[20rem]"
+          className="w-[15rem] min-h-[10rem]"
         />
         <div className="entry-item-footer flex items-center gap-4">
           <button
-            className="border border-gray-900 rounded px-5 py-[.5rem]"
+            className="text-white border border-xl border-amber-300 rounded px-5 py-[.5rem]"
             onClick={() => handleModal(entry.id)}
           >
-            Eye
+            Open Details
           </button>
           <button
-            className="border border-gray-900 rounded px-5 py-[.5rem]"
+            className="text-white border border-xl border-amber-300 rounded px-5 py-[.5rem]"
             onClick={() => handleDelete(entry.id)}
           >
-            Delete
+            Delete File
           </button>
         </div>
       </div>

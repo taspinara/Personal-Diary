@@ -8,7 +8,7 @@ function EntryList() {
 
   return (
     <div>
-      <div className="entry-list flex flex-col gap-4">
+      <div className="entry-list flex flex-wrap justify-center gap-4">
         {entries.map((entry) => (
           <EntryItem key={entry.id} entry={entry} />
         ))}

@@ -1,1 +1,14 @@
 @plugin "daisyui";
+
+.home {
+    background-image: url(./assets/browser-image/old-oak-wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.submit-button {
+    background-image: url(../src/assets/browser-image/button-plaque.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
