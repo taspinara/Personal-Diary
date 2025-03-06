@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <EntryContextProvider>
-      <div className="App">
+      <div className="App bg-[url(/assets/browser-image/old-oak-wood.jpg)]">
       <SplashScreen />
         <Routes>
           <Route path="/" element={<Home />} />
